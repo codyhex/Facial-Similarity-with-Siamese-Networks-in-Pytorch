@@ -22,23 +22,23 @@ You can find other project requirements in `requirements.txt` , which you can in
 #### This project requires python3.6
 
 ## How to install from fresh
-# create conda env
-conda create -n pytorch python=3.6
+#### create conda env
+`conda create -n pytorch python=3.6`
 
-# activate the created environment
-conda activate pytorch
+#### activate the created environment
+`conda activate pytorch`
 
-# install numpy
-conda install numpy
+####install numpy
+`conda install numpy`
 
-# install torch
-conda install torchvision -c anaconda pytorch-gpu
-or use this
-conda install torchvision pytorch cuda100 -c pytorch
+#### install torch
+`conda install torchvision pytorch cuda100 -c pytorch`
 
-# test gpu install
-python -c 'import torch; print(torch.rand(2,3).cuda())'
+#### test gpu install
+`python -c 'import torch; print(torch.rand(2,3).cuda())' `
 
-# for install jupyter & matplotlib in this env 
+#### for install jupyter & matplotlib in this env 
+```
 conda install nb_conda
 conda install matplotlib
+```
